@@ -1,3 +1,5 @@
-
-  <h1 style="font-wieght: bold; font-size:150px;" >Selamat</h1>
-  <h1 style="font-wieght: bold; font-size:150px;" >Datang</h1>
+<div class="container">
+  <h1 class="display-4 mt-4">Selamat Datang!</h1>
+  <p class="lead">Halo nama saya Gamas Namara Akbar</p>
+  <hr class="my-4">
+</div>
