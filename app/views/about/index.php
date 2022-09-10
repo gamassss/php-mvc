@@ -1,4 +1,4 @@
-<div class="container">
+
 
   <h1 style="font-weight: bold; font-size:150px;">About</h1>
   <h1 style="font-weight: bold; font-size:150px;">Me</h1>
@@ -7,5 +7,3 @@
   <p>Nama saya <?= $data['nama'] ?> dan sedang berkuliah di <?= $data['univ'] ?>
     prodi saya <?= $data['prodi'] ?>
   </p>
-
-</div>

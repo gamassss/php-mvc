@@ -20,7 +20,7 @@
           <a class="nav-link <?= ($data["judul"] === 'Home Page') ? 'active' : '' ?>" aria-current="page" href="<?= BASEURL; ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= ($data["judul"] === 'Pegawai') ? 'active' : '' ?>" href="<?= BASEURL; ?>pegawai">Pegawai</a>
+          <a class="nav-link <?= ($data["judul"] === 'Pegawai' || $data["judul"] === 'Detail Pegawai') ? 'active' : '' ?>" href="<?= BASEURL; ?>pegawai">Pegawai</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?= ($data["judul"] === 'About me') ? 'active' : '' ?>" href="<?= BASEURL; ?>about">About</a>
@@ -32,3 +32,4 @@
     </div>
   </div>
 </nav>
+<div class="container mt-4">

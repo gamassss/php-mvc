@@ -1,5 +1,5 @@
 
-<div class="container mt-4">
+<div class="container mt-5">
   <div class="row">
     <div class="col-6 mt-4">
       <h2>Daftar Pegawai</h2>
