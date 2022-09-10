@@ -2,24 +2,26 @@
 
 class Pegawai_model {
 
-  private $dbh, $stmt;
+  private $table = 'employees',
+          $db;
+
 
   public function __construct()
   {
-    //data source name
-    $dsn = 'mysql:host=localhost;dbname=phpdasar';
-
-    try {
-      $this->dbh = new PDO($dsn, 'root', 'root');
-    } catch(PDOException $e) {
-      die($e->getMessage());
-    }
+    $this->db = new Database;
   }
 
   public function getAllPegawai()
   {
-    $this->stmt =  $this->dbh->prepare('SELECT * FROM pegawai');
-    $this->stmt->execute();
-    return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+    $this->db->query("SELECT * FROM " . $this->table);
+    return $this->db->resultSet();
+  }
+
+  public function getPegawaiById($id)
+  {
+    $id = intval($id);
+    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE EMPLOYEE_ID=:EMPLOYEE_ID');
+    $this->db->bind('EMPLOYEE_ID', $id);
+    return $this->db->single();
   }
 }
