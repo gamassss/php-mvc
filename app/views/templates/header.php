@@ -25,6 +25,9 @@
         <li class="nav-item">
           <a class="nav-link <?= ($data["judul"] === 'About me') ? 'active' : '' ?>" href="<?= BASEURL; ?>about">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link <?= ($data["judul"] === 'Login') ? 'active' : '' ?>" href="<?= BASEURL; ?>login">Login</a>
+        </li>
       </ul>
     </div>
   </div>
