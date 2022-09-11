@@ -2,6 +2,12 @@
     <div class="col-6">
       <h2>Daftar Pegawai</h2>
 
+      <div class="row">
+        <div class="col-6">
+          <?php Flasher::flash();?>
+        </div>
+      </div>
+
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary mt-2 mb-4" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Data Pegawai

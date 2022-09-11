@@ -23,7 +23,13 @@ class Pegawai extends Controller{
   public function tambah()
   {
     if( $this->model('Pegawai_model')->tambahDataPegawai($_POST) > 0 ) {
+      Flasher::setFlash('Data pegawai', 'berhasil', 'success');
       header('Location: '. BASEURL . 'pegawai');
+      exit;
+    } else {
+      Flasher::setFlash('Data pegawai', 'gagal', 'danger');
+      header('Location: '. BASEURL . 'pegawai');
+      exit;
     }
   }
 
