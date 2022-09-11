@@ -20,4 +20,11 @@ class Pegawai extends Controller{
     $this->view('templates/footer');
   }
 
+  public function tambah()
+  {
+    if( $this->model('Pegawai_model')->tambahDataPegawai($_POST) > 0 ) {
+      header('Location: '. BASEURL . 'pegawai');
+    }
+  }
+
 }

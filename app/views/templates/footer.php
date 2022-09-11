@@ -1,4 +1,4 @@
 </div>
-<script src="<?= BASEURL; ?>public/js/bootstrap.js"></script> 
+<script src="<?= BASEURL; ?>js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
