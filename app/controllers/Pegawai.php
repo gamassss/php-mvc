@@ -33,4 +33,9 @@ class Pegawai extends Controller{
     }
   }
 
+  public function ubah()
+  {
+    
+  }
+
 }

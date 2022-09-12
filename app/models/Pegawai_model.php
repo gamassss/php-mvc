@@ -28,6 +28,7 @@ class Pegawai_model {
   public function tambahDataPegawai($data)
   {
   //   $lname = $data['LAST_NAME'] ?? '';
+
     $query = "INSERT INTO employees (FIRST_NAME, LAST_NAME, EMAIL, HIRE_DATE, JOB_ID)
               VALUES
               (:FIRST_NAME, :LAST_NAME, :EMAIL, :HIRE_DATE, :JOB_ID)";
